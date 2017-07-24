@@ -1,0 +1,9 @@
+<h1>{{name}}</h1>
+<h2>{{price}}</h2>
+
+<input type="text" placeholder="new feature" #newfeature>
+<button (click)="addNewFeature(newfeature.value)">Add New feature</button>
+
+<ul>
+    <li *ngFor="let feature of features" >{{feature}}</li>
+</ul>
